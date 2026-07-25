@@ -662,23 +662,13 @@ footer p{
 }
 
 .project-card::before{
-
     content:"";
-
     position:absolute;
-
     inset:0;
-
-    background:linear-gradient(
-        135deg,
-        rgba(79,140,255,.08),
-        transparent
-    );
-
+    background:linear-gradient(135deg, rgba(79,140,255,.08), transparent);
     opacity:0;
-
     transition:.3s;
-
+    pointer-events:none;
 }
 
 .project-card:hover::before{
